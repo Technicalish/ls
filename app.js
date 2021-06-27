@@ -1,9 +1,9 @@
-
+var __rdir = '/storage/8437-11FE/Dev-BacExa/ls';
 var express = require('express');
 var app = express();
-var cors = require('cors');
+//var cors = require('cors');
 var db = require('level')(__dirname+'/lsdb');
-app.use(cors({
+/*app.use(cors({
   "origin": "http://localhost:8080"
 }));
 app.post('/'
@@ -30,9 +30,9 @@ app.get('*', async function(req, res) {
   .then(url => res.redirect(301, url))
   .catch(e => res.status(404).end());
 });
-app.listen(4040);
+app.listen(4040);*/
 var fapp = express();
-fapp.use(express.static(__dirname + '/public/'));
+fapp.use(express.static(__rdir+'/public/'));
 fapp.post('/'
 , require('multer')().none()
 , async function(req, res) {
