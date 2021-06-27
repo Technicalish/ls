@@ -1,4 +1,3 @@
-var __rdir = '/storage/8437-11FE/Dev-BacExa/ls';
 var express = require('express');
 var app = express();
 var cors = require('cors');
