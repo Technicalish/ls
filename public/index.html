@@ -1,0 +1,22 @@
+<html>
+<head>
+    <title>YOSL.GA | Your own short link generator autobot</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="stylesheet" href="app.css">
+</head>
+<body>
+	<header><a id="header" href="/">YOSL.GA</a></header>
+    <main>
+      <form action="/" method="post" enctype="multipart/form-data" autocomplete="off" spellcheck="false">
+        <input type="url" name="url" required>
+        <select name="domain" required>
+          <option value="http://localhost:4040" selected>YOSL.GA</option>
+        </select>
+        <input name="pathname" maxlength="20" >
+        <button type="submit">CREATE</button>
+      </form>
+    </main>
+    <script src="app.js" async defer></script>
+</body>
+</html>
