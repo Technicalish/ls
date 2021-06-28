@@ -28,4 +28,4 @@ app.get('*', async function(req, res) {
   .then(url => res.redirect(301, url))
   .catch(e => res.status(404).end());
 });
-app.listen(process.env.PORT || 8080);
+module.exports = app;
