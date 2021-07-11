@@ -3,7 +3,7 @@ var app = express();
 var cors = require('cors');
 var db = require('level')(__dirname + '/lsdb');
 app.use(cors({
-  "origin": "http://localhost:8080"
+  "origin": "*"
 }));
 app.post('/'
 , require('multer')().none()
